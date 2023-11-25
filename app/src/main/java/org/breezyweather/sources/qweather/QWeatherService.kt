@@ -36,12 +36,12 @@ class QWeatherService @Inject constructor(
     client: Retrofit.Builder
 ) : HttpSource(), LocationSearchSource, ConfigurableSource, MainWeatherSource, ReverseGeocodingSource {
     override val id = "qweather"
-    override val name = "QWeather"
+    override val name = "和风天气"
 
-    override val privacyPolicyUrl = "https://www.qweather.com/terms/tos"
+    override val privacyPolicyUrl = "https://www.qweather.com/terms/privacy"
 
     override val color = Color.rgb(202, 240, 255)
-    override val weatherAttribution = "Qweather"
+    override val weatherAttribution = "和风天气 CC BY-SA 4.0"
     override val locationSearchAttribution = weatherAttribution
 
     override val supportedFeaturesInMain = listOf(
